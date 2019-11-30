@@ -9,7 +9,10 @@
         "start": "webpack-dev-server --config ./config/webpack.dev.config --hot",
         "build": "webpack --config ./config/webpack.prod.config",
         "electron-build": "yarn build && electron-packager . --out=dist --asar --overwrite --platform=win32",
-        "electron-start": "yarn build && electron ."
+        "electron-start": "yarn build && electron .",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d biuld"
+
     },
     "dependencies": {
         "@babel/plugin-proposal-class-properties": "^7.4.4",

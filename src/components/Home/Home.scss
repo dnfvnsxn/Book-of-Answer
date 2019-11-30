@@ -1,0 +1,43 @@
+.home {
+    background: url("../../img/MessageImg.png");
+    border-top-left-radius: 1%;
+    border-bottom-left-radius: 1%;
+    bottom: 100px;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    font-family: Cursive;
+    text-align: center;
+
+    .home-message-title {
+        padding-top: 3vw;
+    }
+
+    .home-message-content {
+        padding-top: 2vw;
+    }
+
+    .button-start {
+        font-family: Cursive;
+        position: absolute;
+        height: 4vh;
+        width: 10vh;
+        bottom: 2vh;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgb(240, 202, 140);
+        border: 2px solid rgb(239, 195, 120);
+        border-radius: 5px;
+        color: black;
+        font-size: 1.5vh;
+        font-weight: 500;
+        cursor: pointer;
+
+        &:hover {
+            background: rgb(242, 193, 117);
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+}

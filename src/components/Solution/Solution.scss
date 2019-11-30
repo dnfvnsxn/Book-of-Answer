@@ -1,0 +1,38 @@
+.solution {
+    animation: fades 3s;
+    font-family: Cursive;
+    text-align: center;
+    margin-top: 40%;
+
+    .button-home {
+        font-family: Cursive;
+        position: absolute;
+        height: 4vh;
+        width: 10vh;
+        bottom: 2vh;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgb(240, 202, 140);
+        border: 2px solid rgb(239, 195, 120);
+        border-radius: 5px;
+        color: black;
+        font-size: 1.5vh;
+        font-weight: 500;
+        cursor: pointer;
+
+        &:hover {
+            background: rgb(242, 193, 117);
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+}
+@keyframes fades {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

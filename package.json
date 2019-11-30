@@ -1,0 +1,44 @@
+{
+    "name": "bookofanswer",
+    "version": "1.0.0",
+    "author": "dnfvnsxn@naver.com",
+    "homepage": "http://dnfvnsxn.github.io/Book_of_Answer",
+    "license": "MIT",
+    "main": "main.js",
+    "scripts": {
+        "start": "webpack-dev-server --config ./config/webpack.dev.config --hot",
+        "build": "webpack --config ./config/webpack.prod.config",
+        "electron-build": "yarn build && electron-packager . --out=dist --asar --overwrite --platform=win32",
+        "electron-start": "yarn build && electron ."
+    },
+    "dependencies": {
+        "@babel/plugin-proposal-class-properties": "^7.4.4",
+        "classnames": "^2.2.6",
+        "file-loader": "^4.0.0",
+        "react-router-dom": "^4.2.2",
+        "url-loader": "^1.1.2"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.4.3",
+        "@babel/preset-env": "^7.4.3",
+        "@babel/preset-react": "^7.0.0",
+        "babel-loader": "^8.0.5",
+        "babel-plugin-import": "^1.12.0",
+        "clean-webpack-plugin": "^2.0.1",
+        "css-loader": "^2.1.1",
+        "electron": "^5.0.2",
+        "electron-packager": "^13.1.1",
+        "html-loader": "^0.5.5",
+        "html-webpack-plugin": "^3.2.0",
+        "mini-css-extract-plugin": "^0.5.0",
+        "node-sass": "^4.12.0",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
+        "react-hot-loader": "^4.9.0",
+        "sass-loader": "^7.1.0",
+        "style-loader": "^0.23.1",
+        "webpack": "^4.29.6",
+        "webpack-cli": "^3.3.0",
+        "webpack-dev-server": "^3.3.1"
+    }
+}

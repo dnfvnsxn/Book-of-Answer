@@ -12,7 +12,6 @@
         "electron-start": "yarn build && electron .",
         "predeploy": "npm run build",
         "deploy": "gh-pages -d biuld"
-
     },
     "dependencies": {
         "@babel/plugin-proposal-class-properties": "^7.4.4",
